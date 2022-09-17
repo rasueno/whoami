@@ -19,8 +19,4 @@ spec:
             name: whoami
             port:
               number: 80
-  tls:
-  - hosts:
-    - your.domain.com
-    secretName: whoami
     

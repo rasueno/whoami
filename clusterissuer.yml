@@ -1,0 +1,15 @@
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-prod
+  namespace: istio-system
+spec:
+  acme:
+    email: raffy56@gmail.com
+    server: https://acme-v02.api.letsencrypt.org/directory
+    privateKeySecretRef:
+      name: letsencrypt-prod-secretref
+    solvers:
+    - http01:
+        ingress:
+          class: istio
