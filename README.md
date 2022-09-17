@@ -25,3 +25,7 @@ These commands were tested using Ubuntu 22.04.1 LTS distro.
   `kubectl apply -n istio-system -f certificate-raffy.ga.yaml`
 10. Update gateway
   `kubectl apply -n whoami -f gateway-whoami-tls.yaml`
+
+## References
+https://istio.io/latest/blog/2019/custom-ingress-gateway/
+https://medium.com/@rd.petrusek/kubernetes-istio-cert-manager-and-lets-encrypt-c3e0822a3aaf
